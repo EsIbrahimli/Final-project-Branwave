@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="theme/global.css">
     <link rel="stylesheet" href="theme/reset.css">
-    <title>Branwave Project</title>
+    <title>Branwave Project | Home</title>
 </head>
 
 <body>
@@ -17,13 +20,16 @@
                 <nav class="navbar">
                     <ul class="nav-list">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/about.html">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
                     </ul>
                 </nav>
                 <div class="login-signup">
                     <a href="#">Login</a>
                     <a href="#">Sign up</a>
+                </div>
+                <div class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </header>
             <div class="hero-content">
@@ -197,7 +203,7 @@
                     <img class="blog-card-img" src="./assets/images/card1-img.svg" alt="Blog Image">
                     <p class="blog-card-title">Career</p>
                     <h1 class="blog-card-desc">How to win any job you want. Get started with 5 steps.</h1>
-                 </div>
+                </div>
                 <div class="blog-card">
                     <img class="blog-card-img" src="./assets/images/card2-img.svg" alt="Blog Image">
                     <p class="blog-card-title">Lifestyle</p>
@@ -211,7 +217,23 @@
             </div>
         </section>
 
+        <section class="subscribe">
+            <div class="subscribe-content">
+                <img class="subscribe-img" src="./assets/icons/letter-icon.svg" alt="">
+                <h1 class="subscribe-title">Get our latest updates</h1>
+                <p class="subscribe-desc">With lots of unique blocks, you can easily build a page without coding. Build
+                    your next landing page.</p>
+                <form class="subscribe-form">
+                    <input id="subscribe-email" type="email" class="subscribe-input" placeholder="Enter your email:">
+                    <button class="subscribe-button">Subscribe</button>
+                    <p class="subscribe-policy">We’ll never share your details with third parties.
+                        View our Privacy Policy for more info.</p>
+                </form>
+            </div>
+        </section>
+
         <footer class="footer">
+            <div class="footer-container">
             <div class="footer-content">
                 <h1 class="footer-logo">Brainwave.io</h1>
                 <p class="footer-text">With lots of unique blocks, you can easily build a page without coding. Build
@@ -252,6 +274,7 @@
                     <li class="footer-list-item">Terms&Conditions</li>
                     <li class="footer-list-item">Return Policy</li>
                 </ul>
+            </div>
             </div>
         </footer>
     </div>
