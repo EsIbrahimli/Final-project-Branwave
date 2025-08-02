@@ -123,6 +123,7 @@ body {
 
 .footer-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 122px 0px 128px 0px;
     gap: 101px;
@@ -132,7 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 18%;
+    width: 25% !important;
 }
 
 .footer-links {
@@ -640,6 +641,7 @@ body {
 .hero-about-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 80%;
     margin: 0 auto;
     padding: 109px 0px 86px 0px;
@@ -647,7 +649,7 @@ body {
 
 .hero-about-text {
     text-align: center;
-    width: 80%;
+    width: 48%;
     margin: 0 auto;
 }
 
@@ -672,18 +674,19 @@ body {
 
 .hero-about-text2 {
     display: flex;
-    gap: 80px;
+    gap: 121px;
     padding-top: 100px;
+    width: 90%;
 }
 
 .hero-about-title2 {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     flex: 1;
 }
 
 .hero-about-desc2 {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 400;
     opacity: 70%;
     letter-spacing: -0.2px;
@@ -718,7 +721,7 @@ body {
 
 .coders-text {
     flex-basis: 55%;
-    padding: 20px 0px;
+    padding: 120px 0px 0px 0px;
 }
 
 .coders-img {
@@ -753,13 +756,14 @@ body {
 }
 
 .coders-title {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     padding-bottom: 38px;
 }
 
 .coders-desc {
-    font-size: 17px;
+    font-size: 19px;
+    width: 80%;
     font-weight: 400;
     opacity: 70%;
     letter-spacing: -0.2px;
@@ -785,13 +789,13 @@ body {
     gap: 20px;
 }
 
-.team-card:hover{
+.team-card:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
 
 .team-title {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
     padding-bottom: 25px;
@@ -800,6 +804,7 @@ body {
 .team-desc {
     font-size: 19px;
     font-weight: 400;
+    width: 40% !important;
     opacity: 70%;
     line-height: 32px;
     letter-spacing: -0.2px;
@@ -841,10 +846,6 @@ body {
         gap: 40px;
     }
 
-    .coders-text {
-        flex-basis: 55%;
-    }
-
     .coders-title {
         font-size: 36px;
     }
@@ -852,6 +853,17 @@ body {
     .coders-desc {
         font-size: 15px;
     }
+
+    .coders-text {
+        flex-basis: 55%;
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -859,6 +871,9 @@ body {
         width: 80%;
         padding: 60px 0px;
     }
+
+    .hero-about-text{
+        width:80%;    }
 
     .hero-about-title {
         font-size: 36px;
@@ -897,7 +912,7 @@ body {
     }
 
     .coders-text {
-        width: 80%;
+        width: 90% !important;
         text-align: center;
     }
 
@@ -917,6 +932,8 @@ body {
 
     .team-desc {
         font-size: 17px;
+        text-align: center;
+        width: 80% !important;
         text-align: center;
     }
 
@@ -971,6 +988,7 @@ body {
         width: 50%;
     }
 
+
     .footer-container {
         flex-direction: column;
         width: 75%;
@@ -979,10 +997,9 @@ body {
     }
 
     .footer-content {
-        width: 40%;
+        width: 50% !important;
         display: flex;
         align-self: flex-start;
-
     }
 }
 
@@ -1157,4 +1174,3 @@ body {
         padding: 10px 16px;
     }
 }
-
